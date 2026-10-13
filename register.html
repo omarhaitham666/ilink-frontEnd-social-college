@@ -1,0 +1,166 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="theme-color" content="#0B0B10" />
+
+    <title>Create Account | iLink</title>
+
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/pages/auth.css" />
+  </head>
+
+  <body class="auth-page">
+    <main class="auth-scene">
+
+      <!-- Same background as Login -->
+      <div class="scene-background" aria-hidden="true">
+        <canvas id="neonCanvas"></canvas>
+      </div>
+
+      <!-- Same welcome section as Login -->
+      <section class="welcome-content">
+        <a href="index.html" class="brand" aria-label="iLink home">
+          <span class="brand-mark">i</span>
+          <span>iLink</span>
+        </a>
+
+        <div class="welcome-message">
+          <p class="eyebrow">YOUR CAMPUS. YOUR PEOPLE.</p>
+
+          <h1>
+            You don't have to
+            <span>feel alone.</span>
+          </h1>
+
+          <p class="welcome-description">
+            Find your people, share your ideas, and feel connected to something
+            bigger.
+          </p>
+        </div>
+
+        <p class="scene-caption">
+          A little connection can change everything.
+        </p>
+      </section>
+
+      <!-- Register panel using the existing Login design -->
+      <section class="auth-panel" aria-labelledby="register-title">
+
+        <div class="auth-heading">
+          <p class="mobile-brand">iLink community</p>
+
+          <h2 id="register-title">Find your people.</h2>
+
+          <p>Your place in the community starts here.</p>
+        </div>
+
+        <form id="registerForm">
+
+          <div class="form-group">
+            <label for="fullName">Full name</label>
+
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Enter your full name"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">University email</label>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@university.edu"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="university">University</label>
+
+            <input
+              type="text"
+              id="university"
+              name="university"
+              placeholder="Enter your university"
+              autocomplete="organization"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Create a password"
+              autocomplete="new-password"
+              minlength="8"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="confirmPassword">Confirm password</label>
+
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              placeholder="Enter your password again"
+              autocomplete="new-password"
+              minlength="8"
+              required
+            />
+          </div>
+
+          <p
+            class="form-message"
+            id="formMessage"
+            role="status"
+            aria-live="polite"
+          ></p>
+
+          <button
+            type="submit"
+            class="login-button"
+            id="registerButton"
+          >
+            <span>Create your iLink account</span>
+            <span aria-hidden="true">→</span>
+          </button>
+
+        </form>
+
+        <p class="signup-prompt">
+          Already part of iLink?
+          <a href="login.html">Sign in</a>
+        </p>
+
+        <p class="privacy-note">
+          Your community. Your space.
+        </p>
+
+      </section>
+    </main>
+
+    <!-- Existing visual animation -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="features/auth/neon-scene.js"></script>
+  </body>
+</html>
