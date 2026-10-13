@@ -1,0 +1,148 @@
+
+/* =========================
+   1. Buttons
+========================= */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+
+    min-height: 42px;
+    padding: 10px 16px;
+
+    border: 1px solid transparent;
+    border-radius: var(--radius-md);
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition:
+        background-color var(--transition-fast),
+        border-color var(--transition-fast),
+        transform var(--transition-fast);
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: #171320;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-hover);
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background-color: var(--color-surface);
+    color: var(--color-text);
+    border-color: var(--color-border);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-surface-hover);
+}
+
+
+/* =========================
+   2. Cards
+========================= */
+
+.card {
+    padding: var(--space-5);
+
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-card);
+}
+
+
+/* =========================
+   3. Form Fields
+========================= */
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 12px 14px;
+
+    background-color: var(--color-bg);
+    color: var(--color-text);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+    outline: none;
+    transition: border-color var(--transition-fast);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: var(--color-text-muted);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    border-color: var(--color-primary);
+}
+
+.form-textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+/* =========================
+   4. Badges
+========================= */
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 5px 10px;
+
+    background-color: var(--color-primary-soft);
+    color: var(--color-primary);
+
+    border-radius: var(--radius-full);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   5. Utility
+========================= */
+
+.text-secondary {
+    color: var(--color-text-secondary);
+}
+
+.text-muted {
+    color: var(--color-text-muted);
+}
+
+
+
+
+.demo-container {
+    width: min(100% - 32px, 700px);
+    margin: 48px auto;
+}
+
+.demo-container > .badge {
+    margin-bottom: 16px;
+}
+
+.demo-container .card {
+    margin-top: 24px;
+}
+
+.demo-container .btn {
+    margin: 8px 8px 0 0;
+}

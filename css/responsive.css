@@ -1,0 +1,53 @@
+
+/* =========================
+   1. Responsive Layout
+========================= */
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.demo-container {
+    width: min(100% - 32px, 700px);
+    margin-inline: auto;
+}
+
+
+/* =========================
+   2. Tablet
+========================= */
+
+@media (max-width: 768px) {
+    .demo-container {
+        width: min(100% - 24px, 700px);
+        margin-top: 32px;
+    }
+
+    .card {
+        padding: var(--space-4);
+    }
+}
+
+
+/* =========================
+   3. Mobile
+========================= */
+
+@media (max-width: 480px) {
+    .demo-container {
+        width: calc(100% - 24px);
+        margin-top: 24px;
+    }
+
+    .btn {
+        min-height: 44px;
+        padding: 10px 14px;
+    }
+
+    .form-input,
+    .form-textarea {
+        font-size: 16px;
+    }
+}

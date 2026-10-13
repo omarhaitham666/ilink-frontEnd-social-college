@@ -1,0 +1,52 @@
+:root {
+  /* Main backgrounds */
+  --color-bg: #0b0b10;
+  --color-surface: #171320;
+  --color-surface-hover: #1b1b27;
+
+  /* Brand colors */
+  --color-primary: #a78bfa;
+  --color-primary-hover: #9170f5;
+  --color-primary-soft: rgba(167, 139, 250, 0.12);
+
+  /* Text colors */
+  --color-text: #f4f1fa;
+  --color-text-secondary: #a5a1b3;
+  --color-text-muted: #716d80;
+
+  /* Borders */
+  --color-border: rgba(255, 255, 255, 0.08);
+
+  /* Status colors */
+  --color-success: #4ade80;
+  --color-danger: #fb7185;
+  --color-warning: #fbbf24;
+
+  /* Typography */
+  --font-family: Arial, Helvetica, sans-serif;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+
+  /* Border radius */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 999px;
+
+  /* Effects */
+  --shadow-card: 0 8px 30px rgba(0, 0, 0, 0.18);
+
+  /* Layout */
+  --container-width: 1200px;
+  --navbar-height: 68px;
+
+  /* Animation */
+  --transition-fast: 180ms ease;
+}
